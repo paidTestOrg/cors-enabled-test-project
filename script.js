@@ -1,9 +1,14 @@
 console.log('Hello!');
 
-async function shiba() {
-    const response = await fetch("https://shibe.online/api/shibes");
-    const shiba = await response.json();
-    console.log(shiba);
+async function test() {
+    try {
+      const response = await fetch("https://google.com");
+      const test = await response.json();
+      console.log('test', test);
+    } catch {
+      console.log('error');
+    }
+
   }
 
-  shiba();
+  test();
