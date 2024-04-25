@@ -15,7 +15,6 @@ const server = http.createServer((req, res) => {
 async function test() {
   try {
     const response = await fetch('https://archive.org/download/win3_Mineswee/win3_Mineswee.zip');
-    const test = await response.json();
     console.log(response.headers.get('content-type'));
   } catch (e) {
     console.log('error', e);
